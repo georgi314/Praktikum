@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -8,15 +8,54 @@
   <title>Ghibli App</title>
   
   <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+  <link href="css/style.css" rel="stylesheet">
 
 </head>
 
-<body>
+<body> 
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <img src="logo.png"/>
+        </nav>
+        <div class="container">
+            <div class="filters-container">
+                <div class="col-md-4  justify-content-center">
+                    <div class="col-md-5 text-right">
+                        <button class="btn btn-primary grey" id="toggle-grid">Toogle</button>
+                    </div>
+                    <div class="col-md-7 text-left">
+                        <button class="btn btn-primary grey" id="show-filter-options">Show Filters</button>    
+                    </div>
+                </div>
+                <div class="col-md-8 justify-content-start text-left" id="filters">
+                    <div class="col-md-4">
+                        <select class="browser-default custom-select" id="filter-year">
+                            <option id="default" selected>Select Year</option>
+                        </select> 
+                    </div>
+                    <div class="col-md-4">
+                        <select class="browser-default custom-select" id="filter-director">
+                            <option id="default" selected>Select Director</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <select class="browser-default custom-select" id="filter-producer">
+                            <option id="default" selected>Select Producer</option>
+                        </select>
+                    </div>            
+                </div>      
+            </div>
+            <div class="main-container">
 
-  <div id="root"></div>
+            </div>
+        </div>
+    </div>
 
-  <script src="scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
